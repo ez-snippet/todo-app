@@ -17,5 +17,5 @@ A modern Todo App developed using HTML, CSS, and JavaScript. This project demons
 
 ## Author
 
-Ali Shaikh
+Ali 
 Junior Full Stack PHP Developer
