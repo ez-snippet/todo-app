@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like Button</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <style>
+        .like{
+            color: red;
+        }
+        i{
+            cursor: pointer;
+            font-size: 40px;
+        }
+        div{
+         display: flex;
+        }
+    </style>
+</head>
+<body>
+
+   <div>
+      <h2></h2>
+    <i class="fa fa-heart"></i>
+    <br><br>
+    <button id="click">Click</button>
+    </div>
+    <script>
+        let btn = document.getElementById("click")
+        let like = document.getElementsByClassName("fa")[0]
+       let stor = document.querySelector("h2")
+        let box =  document.getElementsByTagName("div")
+        let plus = 0
+
+        like.addEventListener("click", ()=>{
+         plus ++
+            like.classList.add("like")
+
+           stor.innerText = "plus: " + plus
+
+        })
+    </script>
+
+</body>
+</html>

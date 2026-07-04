@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        .images {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        button {
+            width: 100px;
+            height: 45px;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="java.jpg"  id="sliderImage">
+    
+    <br>
+    <button id="pre">Previous</button>
+    <button id="next">Next</button>
+
+    <div class="box" id="box">
+        Click me to change my style!
+    </div>
+
+    <script>
+
+        let ali = ["kotlin.jpg", "html.jpg", "go.jpg", "css.jpg", "java.jpg"];
+
+        let prev = document.getElementById("pre"); 
+        let next = document.getElementById("next");
+        let img = document.getElementById("sliderImage"); 
+
+        let a = 0;
+
+        next.addEventListener("click", function () {
+            a++;
+            if (a >= ali.length) {
+                a = 0;
+            }
+            img.src = ali[a]; 
+        });
+
+        prev.addEventListener("click", function () {
+            a--;
+            if (a < 0) {
+                a = ali.length - 1;
+            }
+            img.src = ali[a];
+        });
+
+
+        let box = document.getElementById("box");
+        box.addEventListener("click", () => {
+            box.style.color = "red"; 
+            box.style.backgroundColor = "white"; 
+        });
+    </script>
+</body>
+</html>

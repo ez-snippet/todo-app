@@ -1,0 +1,18 @@
+console.log ("ayesha developer");
+var ayesha = 20;
+console.log(ayesha);
+let  ali =50;
+console.log(ali);
+ var mobile = 100;
+ var charger = 500;
+ var laptop = charger+ mobile;
+ console.log(laptop);
+ const mouse = "print kerdo";
+ console.log(mouse);
+ console.log(" programmers");
+ console.log(" javascript developer ho");
+ console.log("web development");
+ let headphone = 6000;
+ let price = 10000;
+ let m = headphone+price;
+ console.log(m);

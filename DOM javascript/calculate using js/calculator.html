@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/475497.png">
+    <link rel="stylesheet" href="/calculator.css">
+    <title>calculator</title>
+</head>
+<body>
+    <div class="container">
+      <input type="text" class="box" id="screen" readonly>
+            <button onclick="add('+')">+</button>
+             <button class="mazher" onclick="add('-')" >-</button>
+             <button class="azher" onclick="add('*')">×</button>
+             <button class="ali" onclick="add('/')">÷</button>
+             <div class="czn">
+              <button class="home" onclick="add(7)"> 7</button>
+              <button class="home"  onclick="add(8)"> 8</button>
+              <button class="home" onclick="add(9)"> 9</button>
+              <button class="home" onclick="add(4)"> 4</button>
+              </div>
+              <div class="czn">
+              <button class="sheeraz" onclick="add(5)">5</button>
+              <button class="sheeraz" onclick="add(6)">6</button>
+              <button class="sheeraz"  onclick="add(1)" >1</button>
+              <button class="sheeraz" onclick="add(2)">2</button>
+              </div>
+              <div class="czn">
+              <button class="sheeraz" onclick="add(3)">3</button>
+              <button class="sheeraz" onclick="add(0)">0</button>
+              <button class="sheeraz" onclick="add('.')">.</button>
+              <button class="abdullah" onclick="clearscreen()">C</button>
+              </div>
+              <button class="eazyclasstow" onclick="calculate()">=</button>
+              </div>
+    </div>
+    <script src="calculate.js"></script>
+</body>
+</html>

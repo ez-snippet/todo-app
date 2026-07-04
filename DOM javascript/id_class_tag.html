@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="off">Bulb of</h2>
+    <button onclick="bulb()"> on </button>
+    <p class="text">Hi 🥰</p>
+    <p class="text"> developers 😎</p>
+    <p class="text"> coders 😏</p>
+    <button onclick="textchange()"> Text change</button>
+    <script>
+        function bulb() {
+            document.getElementById("off").innerText = " Bulb on ";
+        }
+        function textchange() {
+            let x = document.getElementsByClassName("text");
+            for (let i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

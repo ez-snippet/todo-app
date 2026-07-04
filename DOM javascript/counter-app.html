@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1 id="counter"> Counter App</h1>
+    <p id="count">count:</p>
+    <button id="btn"> click me </button>
+    <script>
+        let counter = document.getElementById("counter")
+
+        let count = document.getElementById("count")
+
+        let btn = document.getElementById("btn")
+
+        let plus = 0
+
+        btn.addEventListener("click", ()=>{
+            plus ++
+            count.innerText= "count:" + plus
+        })
+    </script>
+</body>
+</html>
