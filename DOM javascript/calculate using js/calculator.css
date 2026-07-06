@@ -18,13 +18,13 @@ body{
     margin-right: 10px;
     border: none;
     text-align: center;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 
 }
 .box:hover{
     border:1px solid white;
-    font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
 }
 .number{
     display:flex;

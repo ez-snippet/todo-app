@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: none;
+        }
+        .add{
+            display:flex;
+            width: 200px;
+            height: 200px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn"> side pannel open</button>
+    <div class="box">
+        <p> Home</p>
+        <br>
+        <br>
+        <p>  short</p>
+    </div>
+    <script>
+        let a = document.getElementById("btn");
+        let b = document.getElementsByClassName("box")[0];
+        a.addEventListener("click", () => {
+            b.classList.toggle("add");
+        })
+    </script>
+</body>
+</html>
